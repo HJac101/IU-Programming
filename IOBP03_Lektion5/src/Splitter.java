@@ -23,5 +23,7 @@ public class Splitter {
         String hersteller = aufteilungClean[2];
         float preis = Float.parseFloat(aufteilungClean[3].replace(",","."));
         System.out.println("Korrigiertes Preisformat: " + preis);
+
+
     }
 }
