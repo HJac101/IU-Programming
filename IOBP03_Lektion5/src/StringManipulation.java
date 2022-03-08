@@ -55,6 +55,25 @@ public class StringManipulation {
         String firmaNameClean = firmaNameRaw.replace("_", " ");
         System.out.println("FIRMENNAME: " + firmaNameClean);
 
+        //String Vergleiche mit equalsToIgnoreCase
+        String analyseText2 = "2022-03-08_RKK_Apolda_001.csv";
+        String dateiEndung = analyseText2.substring(analyseText2.lastIndexOf(".") + 1);
+        if(dateiEndung.equalsIgnoreCase("csv")) {
+            System.out.println("DATEIENDUNG: " + dateiEndung);
+        } else System.out.println("DATEIENDUNG <" + dateiEndung + "> UNBEKANNT");
+
+        //String Vergleiche mit compareToIgnoreCase
+        String name1 = "Robert";
+        String name2 = "Robert";
+
+        if(name1.compareToIgnoreCase(name2) < 0){
+            System.out.println("VERGLEICH: <" + name1 + "> kommt vor <"+ name2 + "> im Telefonbuch!");
+        } else if(name1.compareToIgnoreCase(name2) > 0){
+            System.out.println("VERGLEICH: <" + name1 + "> kommt nach <"+ name2 + "> im Telefonbuch!");
+        } else {
+            System.out.println("VERGLEICH: <" + name1 + "> und <" + name2 + "> sind gleich!");
+        }
+
 
 
 
