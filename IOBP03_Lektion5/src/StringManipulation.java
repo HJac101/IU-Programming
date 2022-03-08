@@ -64,18 +64,21 @@ public class StringManipulation {
 
         //String Vergleiche mit compareToIgnoreCase
         String name1 = "Robert";
-        String name2 = "Robert";
+        String name2 = "Roberto";
 
         if(name1.compareToIgnoreCase(name2) < 0){
-            System.out.println("VERGLEICH: <" + name1 + "> kommt vor <"+ name2 + "> im Telefonbuch!");
+            System.out.println("VERGLEICH: <" + name1 + "> kommt vor <" + name2 + "> im Telefonbuch!");
         } else if(name1.compareToIgnoreCase(name2) > 0){
             System.out.println("VERGLEICH: <" + name1 + "> kommt nach <"+ name2 + "> im Telefonbuch!");
         } else {
             System.out.println("VERGLEICH: <" + name1 + "> und <" + name2 + "> sind gleich!");
         }
 
-
-
+        //Vergleich mit ==
+        if(name1 == name2)
+            System.out.println("VERGLEICH ==: True");
+        else
+            System.out.println("VERGLEICH ==: False");
 
 
     }
