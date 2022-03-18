@@ -4,7 +4,7 @@ public class Splitter {
 
         //Aufteilung ohne Cleaning
         String aufteilung[];
-        aufteilung = zeile1.split("'.'");
+        aufteilung = zeile1.split("','");
 
         for (String wert : aufteilung){
             System.out.println(wert);
@@ -22,7 +22,7 @@ public class Splitter {
         String titel = aufteilungClean[1];
         String hersteller = aufteilungClean[2];
         float preis = Float.parseFloat(aufteilungClean[3].replace(",","."));
-        System.out.println("Korrigiertes Preisformat: " + preis);
+        System.out.println("Korrigiertes Preisformat: " + preis +"€");
 
 
     }
