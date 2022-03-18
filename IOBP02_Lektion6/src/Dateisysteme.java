@@ -28,7 +28,7 @@ public class Dateisysteme {
 
     public static void main(String[] args) {
 
-/*
+
         //Ausgabe aller Root-Filesysteme
         File[] roots = File.listRoots();
         for(File root:roots){
@@ -38,8 +38,8 @@ public class Dateisysteme {
                 System.out.println(file.getAbsolutePath());
             }
         }
-*/
-        String sep = File.separator;
+
+/*        String sep = File.separator;
         String pfad = "C:" + sep + "Wichtiges" + sep + "Java_File_Test" + sep + "test_file.txt";
         System.out.println(pfad);
 
@@ -51,11 +51,11 @@ public class Dateisysteme {
         System.out.println(pfad + " kann geändert werden: " + verzeichnis.canWrite());
         System.out.println(pfad + " Anzahl Bytes: " + verzeichnis.length() + " bytes");
         System.out.println(pfad + " Änderungsdatum: " + (new Date(verzeichnis.lastModified())));
+*/
+        // Dateisysteme ds = new Dateisysteme();
+        // ds.verzeichnisAnlegen();
 
-        Dateisysteme ds = new Dateisysteme();
-        ds.verzeichnisAnlegen();
-
-        ds.verschiebeFile(verzeichnis);
+        // ds.verschiebeFile(verzeichnis);
 
 
     }
