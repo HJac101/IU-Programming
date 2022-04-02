@@ -5,7 +5,7 @@ public class Katzenwahnsinn {
     public static void main(String[] args) {
         for(int i = 0; i<5; i++){
             machKatzen(10000);
-            warten(20);
+            warten(5000);
         }
     }
 
