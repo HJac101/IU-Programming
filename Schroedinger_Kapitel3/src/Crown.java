@@ -1,7 +1,7 @@
 public class Crown {
     public static void main(String[] args) {
 
-        final int breite = 7;
+        final int breite = 15;
         final int haelfteBreite = (breite-1)/2;
         final int hoehe = haelfteBreite;
         final int letzteReihe = hoehe-1;
