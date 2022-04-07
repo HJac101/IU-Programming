@@ -4,6 +4,7 @@
  */
 package shop;
 
+import java.util.Date;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
@@ -11,13 +12,33 @@ import javax.faces.bean.RequestScoped;
  *
  * @author H_Jacob
  */
-@ManagedBean
-@RequestScoped
 public class Artikel {
+    private int nr;
+    private String name;
+    private String text;
+    private String bild;
+    private Date verfügbarAb;
 
-    private String name = "Filzpantoffeln";
-    
-    public Artikel() {
+    public Artikel(){};
+
+    public Artikel(int nr, String name, String text, String bild){
+        this(nr, name, text, bild, new Date(0));
+    }
+
+    public Artikel(int nr, String name, String text, String bild, Date verfügbarAb){
+        this.nr=nr;
+        this.name=name;
+        this.text=text;
+        this.bild=bild;
+        this.verfügbarAb=verfügbarAb;
+    }
+
+    public int getNr() {
+        return nr;
+    }
+
+    public void setNr(int nr) {
+        this.nr = nr;
     }
 
     public String getName() {
@@ -27,7 +48,28 @@ public class Artikel {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
-    
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getBild() {
+        return bild;
+    }
+
+    public void setBild(String bild) {
+        this.bild = bild;
+    }
+
+    public Date getVerfügbarAb() {
+        return verfügbarAb;
+    }
+
+    public void setVerfügbarAb(Date verfügbarAb) {
+        this.verfügbarAb = verfügbarAb;
+    }
 }

@@ -1,23 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
- */
 package shop;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
-/**
- *
- * @author H_Jacob
- */
 @ManagedBean
 @RequestScoped
 public class Anschrift {
     
     private String name = "Max Müller";
     private String strasse = "Fette-Straße";
-    private int hausnummer = 5;
+    private int hausnummer = 8;
     private String plz = "12345";
     private String ort = "Berlin";
     
