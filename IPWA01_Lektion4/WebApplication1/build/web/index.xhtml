@@ -12,12 +12,11 @@
             <h:outputText value="#{anschrift.strasse} #{anschrift.hausnummer}"/><br/>
             <h:outputText value="#{anschrift.plz} #{anschrift.ort}"/>
         </p>
-        <p>
             <h:dataTable var="einArtikel" value="#{shop.sortiment}">
                 <h:column><h:outputText value="#{einArtikel.nr}"/></h:column>
-            
+                <h:column><h:outputText value="#{einArtikel.name}"/></h:column>
+                <h:column><h:outputText value="#{einArtikel.text}"/></h:column>
             </h:dataTable>
-        </p>
         <h1>Artikelverwaltung</h1>
     </h:body>
 </html>
