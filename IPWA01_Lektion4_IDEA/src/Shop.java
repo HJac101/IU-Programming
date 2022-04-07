@@ -2,9 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
  */
-
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -13,8 +10,7 @@ import java.util.List;
  *
  * @author H_Jacob
  */
-@ManagedBean
-@RequestScoped
+
 public class Shop {
     private List<Artikel> sortiment = new ArrayList<>();
     private static Shop instance = new Shop();
